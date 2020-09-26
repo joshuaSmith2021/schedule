@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Schedule</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+.row div {
+  border-style: solid;
+  border-width: 1px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="display-4">Schedule</h2>
+
+    <div class="form-check-inline">
+      <label class="form-check-label" for="radio1">
+        <input type="radio" class="form-check-input schedule-select" name="current-schedule" data-domid="reg" checked>
+        Regular Schedule
+      </label>
+    </div>
+    <div class="form-check-inline">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input schedule-select" name="current-schedule" data-domid="art" id="artRadio">
+        Articulation
+      </label>
+    </div>
+
+    <hr>
+
+    <div class="schedule-view" id="art" style="display:none">
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="7:45" data-end="8:50"></span>
+        </div>
+        <div class="col-9">
+          First Block
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="8:55" data-end="10:20"></span>
+        </div>
+        <div class="col-9">
+          Second Block = All Students must check in; SEL time (8:55 - 9:15 am)
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="10:20" data-end="11:50"></span>
+        </div>
+        <div class="col-4">
+          Third Block - 1st Brunch
+          <br/>
+          <span class="countdown" data-start="10:20" data-end="10:40"></span> - Brunch
+          <br/>
+          <span class="countdown" data-start="10:45" data-end="11:50"></span> - Block 3
+        </div>
+        <div class="col-5">
+          Third Block - 2nd Brunch
+          <br/>
+          <span class="countdown" data-start="10:25" data-end="11:30"></span> - Block 3
+          <br/>
+          <span class="countdown" data-start="11:30" data-end="11:50"></span> - Brunch
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="11:55" data-end="13:00"></span>
+        </div>
+        <div class="col-9">
+          Fourth Block
+        </div>
+      </div>
+    </div>
+
+    <div class="schedule-view" id="reg">
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="7:45" data-end="9:00"></span>
+        </div>
+        <div class="col-9">
+          First Block
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="9:00" data-end="9:05"></span>
+        </div>
+        <div class="col-9">
+          Break
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="9:10" data-end="10:30"></span>
+        </div>
+        <div class="col-9">
+          Second Block - All Students must check in
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="10:35" data-end="12:25"></span>
+        </div>
+        <div class="col-4">
+          Third Block - 1st Lunch
+          <br/>
+          <span class="countdown" data-start="10:30" data-end="11:00"></span> - Lunch
+          <br/>
+          <span class="countdown" data-start="11:05" data-end="12:20"></span> - Block 3
+        </div>
+        <div class="col-5">
+          Third Block - 2nd Lunch
+          <br/>
+          <span class="countdown" data-start="10:35" data-end="11:50"></span> - Block 3
+          <br/>
+          <span class="countdown" data-start="11:50" data-end="12:20"></span> - Lunch
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="12:25" data-end="13:40"></span>
+        </div>
+        <div class="col-9">
+          Fourth Block
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="13:40" data-end="14:40"></span>
+        </div>
+        <div class="col-9">
+          Teacher Preparation/Collaboration
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="14:40" data-end="15:05"></span>
+        </div>
+        <div class="col-9">
+          Teacher Office Hours
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="schedule.js"></script>
+</body>
+</html>
