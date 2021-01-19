@@ -31,6 +31,12 @@
     <h2 class="display-4">Schedule</h2>
 
     <div class="form-check-inline">
+      <label class="form-check-label" for="radio3">
+        <input type="radio" class="form-check-input schedule-select" name="current-schedule" data-domid="ampmreg" id="artRadio">
+        Articulation
+      </label>
+    </div>
+    <div class="form-check-inline">
       <label class="form-check-label" for="radio1">
         <input type="radio" class="form-check-input schedule-select" name="current-schedule" data-domid="reg" checked>
         Regular Schedule
@@ -87,6 +93,100 @@
         </div>
         <div class="col-9">
           Fourth Block
+        </div>
+      </div>
+    </div>
+
+    <div class="schedule-view" id="ampmreg" style="display:none">
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="7:45" data-end="8:25"></span>
+        </div>
+        <div class="col-9">
+          Period 1 AM
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="8:30" data-end="9:15"></span>
+        </div>
+        <div class="col-9">
+          Period 2 AM
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="9:15" data-end="9:20"></span>
+        </div>
+        <div class="col-9">
+          Break
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="9:25" data-end="10:05"></span>
+        </div>
+        <div class="col-9">
+          Period 3 AM
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="10:10" data-end="10:50"></span>
+        </div>
+        <div class="col-9">
+          Period 4 AM
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          &nbsp;
+        </div>
+        <div class="col-6" style="text-align: center">
+          <span class="countdown" data-start="10:50" data-end="11:10"></span> - AM Grab and Go Lunch
+        </div>
+        <div class="col-3">
+          &nbsp;
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="11:30" data-end="12:10"></span>
+        </div>
+        <div class="col-9">
+          Period 1 PM
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="12:15" data-end="13:00"></span>
+        </div>
+        <div class="col-9">
+          Period 2 PM
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="13:00" data-end="13:05"></span>
+        </div>
+        <div class="col-9">
+          Break
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="13:10" data-end="13:50"></span>
+        </div>
+        <div class="col-9">
+          Period 3 PM
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <span class="countdown" data-start="13:55" data-end="14:35"></span>
+        </div>
+        <div class="col-9">
+          Period 4 PM
         </div>
       </div>
     </div>
